@@ -4,7 +4,7 @@
     </div>
  
 
-<p disply=flex>GoRestaurant<p>
+<p disply=flex>To.do<p>
 
 ## Descrição do Projeto
 Este é um projeto de CRUD onde o objetivo é uma pequena aplicação de lista de atividades a fazer, <br/>
