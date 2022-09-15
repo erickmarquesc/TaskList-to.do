@@ -39,10 +39,19 @@
 <p disply=flex>To.do<p>
 
 ## Descrição do Projeto
-Este é um projeto de CRUD onde o objetivo é uma pequena aplicação de lista de atividades a fazer, <br/>
-para treinar um pouco mais sobre manipulação do estado no React.  <br/>
-    - Adicionar uma nova tarefa  <br/>
-    - Remover uma tarefa  <br/>
-    - Marcar e desmarcar uma tarefa como concluída. <br/>
+Nesse projeto, desenvolvi uma aplicação de controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
+
+- Adicionar uma nova tarefa
+- Marcar e desmarcar uma tarefa como concluída
+- Remover uma tarefa da listagem
+- Mostrar o progresso de conclusão das tarefas
+
+Apesar de serem poucas funcionalidades, precisei abordar conceitos como:
+
+- Estados
+- Imutabilidade do estado
+- Listas e chaves no ReactJS
+- Propriedades
+- Componentização
     
 Esse projeto foi baseado nas aulas do curso da <a href="https://www.rocketseat.com.br/">Rocketseat🔗</a>.
