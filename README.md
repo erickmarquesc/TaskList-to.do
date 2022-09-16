@@ -36,10 +36,10 @@
 </p>
  
 
-<p disply=flex>To.do<p>
+<p disply=flex>TaskList-to.do<p>
 
 ## Descrição do Projeto
-Nesse projeto, desenvolvi uma aplicação de controle de tarefas no estilo **to-do list**, que contém as seguintes funcionalidades:
+Nesse projeto, desenvolvi uma aplicação de controle de tarefas no estilo **TaskList-to.do**, que contém as seguintes funcionalidades:
 
 - Adicionar uma nova tarefa
 - Marcar e desmarcar uma tarefa como concluída
