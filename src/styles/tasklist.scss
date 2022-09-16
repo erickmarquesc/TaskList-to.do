@@ -57,9 +57,10 @@
           display: flex;
           flex-direction: row;
           align-items: center;
+          justify-content: center;
           width: 90px;
           height: 52px;
-          gap: 1rem;
+          gap: 0.5rem;
           padding: 14px;
           transition: filter 0.2s;
 
@@ -73,10 +74,13 @@
     main {
       margin-top: 3rem;
 
+      
+      
       ul {
         list-style: none;
-
+        
         li {
+          margin-bottom: 1rem;
           width: 830px;
           height: 72px;
           display: flex;

@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import '../styles/tasklist.scss'
 
-import { FiTrash, FiCheckSquare } from 'react-icons/fi'
+import { FiTrash, FiPlusCircle } from 'react-icons/fi'
 
 interface Task {
   id: number;
@@ -62,7 +62,7 @@ export function TaskList() {
             />
             <button type="submit" data-testid="add-task-button" onClick={handleCreateNewTask}>
               Criar
-              <FiCheckSquare size={16} color="#fff" />
+              <FiPlusCircle size={16} color="#fff" />
             </button>
           </div>
 
