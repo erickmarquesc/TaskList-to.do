@@ -76,7 +76,7 @@ export function TaskList() {
 
           <p>Tarefaz criadas <strong>{tasks.length}</strong></p>
 
-          <p>Concluídas <strong>{tasks.filter(task => task.isComplete == true).length}</strong></p>
+          <p>Concluídas <strong>{tasks.filter(task => task.isComplete == true).length}/{tasks.length}</strong></p>
 
         </div>
 
