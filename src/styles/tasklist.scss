@@ -9,9 +9,6 @@
     padding: 70px 60px;
 
     header {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
       justify-content: space-between;
       text-align: center;
 
@@ -71,14 +68,33 @@
       }
     }
 
+    .Cont-task {
+      color: var(--Gray100);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 4rem;
+      
+      gap: 561px;
+
+      height: 19px;
+
+      p {
+        color: var(--PurpleDark);
+      }
+      strong{
+        color: var(--Gray100);
+      }
+
+    }
+
     main {
       margin-top: 3rem;
 
-      
-      
       ul {
         list-style: none;
-        
+
         li {
           margin-bottom: 1rem;
           width: 830px;
@@ -175,6 +191,11 @@
             }
           }
         }
+      }
+
+      .previus-list {
+        text-align: center;
+        color: var(--Gray300);
       }
     }
   }

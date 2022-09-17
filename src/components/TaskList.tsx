@@ -13,6 +13,7 @@ interface Task {
 export function TaskList() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTaskTitle, setNewTaskTitle] = useState('');
+  
 
   function handleCreateNewTask() {
     // Crie uma nova task com um id random, não permita criar caso o título seja vazio.
@@ -35,10 +36,11 @@ export function TaskList() {
       ...task,
       isComplete: !task.isComplete,
     } : task);
-
+    
     setTasks(completeTask)
-
   }
+
+  
 
   function handleRemoveTask(id: number) {
     // Remova uma task da listagem pelo ID
@@ -68,32 +70,53 @@ export function TaskList() {
 
         </header>
 
+        <div className='Cont-task'>
+
+          <p>Tarefaz criadas <strong>{tasks.length}</strong></p>
+
+          <p>Concluídas <strong>{tasks.length}</strong></p>
+
+        </div>
+
         <main>
-          <ul>
-            {tasks.map(task => (
-              <li key={task.id}>
-                <div className={task.isComplete ? 'completed' : ''} data-testid="task" id='item'>
-                  <label className="checkbox-container">
-                    <input
-                      type="checkbox"
-                      readOnly
-                      checked={task.isComplete}
-                      onClick={() => handleToggleTaskCompletion(task.id)}
-                    />
-                    <span className="checkmark"></span>
-                  </label>
-                  <p>{task.title}</p>
-                </div>
 
-                <button type="button" data-testid="remove-task-button" onClick={() => handleRemoveTask(task.id)}>
-                  <FiTrash size={16} />
-                </button>
-              </li>
-            ))}
+          {tasks.length === 0 ?
 
-          </ul>
+            <section className='previus-list'>
+
+              <img src="/Clipboard.svg" alt="to.do" />
+              <p> Você ainda não tem tarefas cadastradas</p>
+              <strong>Crie tarefas e organize seus itens a fazer</strong>
+
+            </section>
+            :
+
+            <ul>
+              {tasks.map(task => (
+                <li key={task.id}>
+                  <div className={task.isComplete ? 'completed' : ''} data-testid="task" id='item'>
+                    <label className="checkbox-container">
+                      <input
+                        type="checkbox"
+                        readOnly
+                        checked={task.isComplete}
+                        onClick={() => handleToggleTaskCompletion(task.id)}
+                      />
+                      <span className="checkmark"></span>
+                    </label>
+                    <p>{task.title}</p>
+                  </div>
+
+                  <button type="button" data-testid="remove-task-button" onClick={() => handleRemoveTask(task.id)}>
+                    <FiTrash size={16} />
+                  </button>
+                </li>
+              ))}
+
+            </ul>
+          }
+
         </main>
-
       </section>
     </div>
   )
